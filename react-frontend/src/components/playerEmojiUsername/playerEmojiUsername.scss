@@ -1,0 +1,11 @@
+p {
+  color: white;
+  font-size: 2rem;
+  text-transform: capitalize;
+  text-align: center;
+
+  > span {
+    padding-right: 10px;
+    font-size: 3rem;
+  }
+}

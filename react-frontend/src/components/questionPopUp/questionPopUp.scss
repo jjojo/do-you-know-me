@@ -1,0 +1,34 @@
+.wrapper{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 99;
+  background-color: #00000055;
+
+  > .question-pop-up{
+    color: #ffffff;
+    z-index: 100;
+    padding: 30px;
+    border-radius: 20px;
+    min-width: 50vw;
+    top: 10vh;
+    position: absolute;
+    width: 60%;
+
+    > span {
+      position: absolute;
+      font-size: 6rem;
+      top: -3rem;
+      left: -3rem;
+    }
+
+    > section {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.leave-game {
+  display: flex;
+  
+  > button {
+    background-color: #ee5253;
+    border: 0;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

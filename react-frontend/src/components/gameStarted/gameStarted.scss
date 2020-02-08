@@ -1,0 +1,33 @@
+@keyframes start-animation {
+  0% {
+    opacity: 1;
+    transform: scale(0.0);
+  }
+  80% {
+    transform: scale(1.0);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.game-started {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  
+  h1 {
+    display: flex;
+    margin-top: 20%;
+    justify-content: center;
+    align-items: center;
+    font-size: 12vw;
+    position: relative;
+    z-index: 1;
+    opacity: 0;
+  }
+
+  .start-animation {
+    animation: start-animation 1s 1 ease-in-out;
+  }
+}

@@ -1,0 +1,26 @@
+@keyframes roll-up {
+  from {
+    transform: translateY(40px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+.score {
+  overflow: hidden;
+  margin: 20px;
+
+  > h1 {
+    color: white;
+    margin: 0;
+  }
+
+  > .roll-up {
+    animation: roll-up ease-in-out 1s 1;
+  }
+
+  > .move-under {
+    transform: translateY(40px);
+  }
+}

@@ -1,0 +1,22 @@
+main > .question {
+  position: relative;
+  .question {
+    min-width: 80px;
+    min-height: 80px;
+    margin-top: 0;
+  }
+
+
+  > button {
+    padding: 10px;
+    margin: 0px 20px;
+  }
+
+  > span {
+    position: absolute;
+    left: -2rem;
+    top: -2.3rem;
+    font-size: 3rem;
+    z-index: 1;
+  }
+}

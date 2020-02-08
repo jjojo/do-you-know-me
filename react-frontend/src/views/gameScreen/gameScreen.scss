@@ -1,0 +1,59 @@
+@keyframes zoom-fade-out {
+  0% {
+    font-size: 2rem;
+    opacity: 1;
+  }
+  100% {
+    font-size: 30rem;
+    opacity: 0;
+  }
+}
+
+.game-screen{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  background-color: paleturquoise;
+  
+  &:fullscreen {
+    background-color: rgba(255,255,255,1);
+  }
+
+  > game-count-down {
+    animation: zoom-fade-out 1s ease-in-out;
+    animation-iteration-count: 4;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 40%;
+    opacity: 1;
+  }
+
+  header {
+    position: absolute;
+  }
+
+  main {
+    display: flex;
+    height: 100%;
+
+    section {
+      width: 100%;
+      min-width: calc(100% / 8);
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      > .question-wrapper {
+        min-height: calc(30vw + 5*20px);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+      }
+    }
+  }
+}
+  

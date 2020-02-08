@@ -1,0 +1,82 @@
+
+.game-controller {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+
+    > h2 {
+      color: black;
+      display: flex;
+      justify-content: space-between;
+      margin: 10px 30px;
+      width: 100%;
+
+      > span {
+        margin: 0 10px;
+      }
+    }
+
+    > span {
+      font-size: 2rem;
+      width: 90%;
+
+      > input {
+        color: white;
+        width: calc(100% - 2rem - 10px);
+        font-size: 2rem;
+        border: none;
+        outline: none;
+        text-align: center;
+        text-transform: capitalize;
+        background: none;
+    
+        &[type=text]::placeholder {
+          color: white;
+        }
+      }
+    }
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    height: 100%;
+     > h1 {
+       text-align: center
+     }
+  }
+
+  footer {
+    width: 100%;
+
+    > button {
+      width: 50%;
+      padding: 1.6rem 1.5rem 1.4rem;
+      font-size: 2.8rem;
+      border-style: inset;
+      outline: none;
+
+      &:only-child {
+        width: 100%;
+      }
+
+      &:first-child {
+        border: 10px solid #ff6b6b;
+      }
+
+      &:last-child {
+        border: 10px solid #1dd1a1;
+      }
+    }
+  }
+  
+}
