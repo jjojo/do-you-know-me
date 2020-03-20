@@ -1,0 +1,17 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  margin: 30px;
+
+  > h2 {
+    text-align: center;
+  }
+}
+
+.input-label {
+  > input {
+    width: 100%;
+  }
+}
