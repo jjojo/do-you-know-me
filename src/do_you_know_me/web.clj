@@ -1,4 +1,4 @@
-(ns do-you-know-me.core
+(ns do-you-know-me.web
   (:require [org.httpkit.server :refer [run-server]]
             [clojure.test :refer :all]
             [do-you-know-me.handler :refer [handler]]))

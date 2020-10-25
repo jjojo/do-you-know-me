@@ -1,0 +1,6 @@
+{
+  "name": "Do you know me",
+  "description": "A jepordy like game built with clojure",
+  "image": "heroku/clojure",
+  "addons": ["heroku-postgresql"]
+}

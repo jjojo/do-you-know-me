@@ -8,6 +8,11 @@
                  [http-kit "2.4.0-alpha4"]
                  [org.clojure/data.json "0.2.6"]
                  [nano-id "0.10.0"]]
-  :main ^:skip-aot do-you-know-me.core
+  :min-lein-version "2.0.0"
+  :plugins [[environ/environ.lein "0.3.1"]]
+  :hooks [environ.leiningen.hooks]
+  :main ^:skip-aot do-you-know-me.web
   :target-path "target/%s"
-  :profiles {:uberjar {:aot :all}})
+  :uberjar-name "do-you-know-me-standalone.jar"
+  :profiles {:production {:env {:production true}}
+              :uberjar {:aot :all}})
