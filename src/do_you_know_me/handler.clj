@@ -76,7 +76,7 @@
 
 (defn handler
   [request]
-  (as-channel request {
+  (-> (as-channel request {
                        :on-open    (fn [channel]
                                      (println "a user connected" (websocket-handshake-check request) (sec-websocket-accept (:sec-websocket-key request)))
                                      (println "is websocket? " (websocket? channel))
@@ -162,4 +162,4 @@
                                                                   (broadcast-answer! "GAME_STATE" (:id data)))
                                              "error")
                                            )
-                                     )}))
+                                     )})))

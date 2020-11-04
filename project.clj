@@ -5,9 +5,13 @@
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [proto-repl "0.3.1"]
-                 [http-kit "2.4.0-alpha4"]
+                 [http-kit "2.5.0"]
                  [org.clojure/data.json "0.2.6"]
-                 [nano-id "0.10.0"]]
+                 [nano-id "0.10.0"]
+                 [compojure "1.6.2"]
+                 [ring/ring-core "1.7.1"]
+                 [ring/ring-defaults "0.3.2"]
+                 ]
   :min-lein-version "2.0.0"
   :plugins [[environ/environ.lein "0.3.1"]]
   :hooks [environ.leiningen.hooks]
